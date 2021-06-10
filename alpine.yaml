@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: alpine-deployment
   labels:
     app: alpine
+  name: alpine-deployment
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: alpine
